@@ -175,7 +175,7 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Çəkilin qırağa, Rihad usta gəldi")
+                               f"Çəkilin qırağa, Senan usta gəldi")
                 continue
 
             # Welcome Devs
@@ -483,7 +483,7 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Rihad Usta qrupu tərk etdi :(..", reply_to_message_id=reply)
+                    "Senan Usta qrupu tərk etdi :(..", reply_to_message_id=reply)
                 return
 
             # Give the devs a special goodbye

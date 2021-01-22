@@ -41,11 +41,11 @@
       "OWNER_ID": {
          "description": "Sənin User ID.",
          "required": true,
-         "value": "792109647"
+         "value": "851431936"
       },
       "OWNER_USERNAME": {
          "description": "@ işarəsi olmadan username",
-         "value": "Rihad"
+         "value": "SenanOguz"
       },
       "SUPPORT_CHAT": {
          "description": "Botunuzn Support qrupunun linki @ işarəsi olmadan. Öz qrupunuzu yazin SoBotlar qrup linkini yox.",
