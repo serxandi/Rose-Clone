@@ -59,15 +59,12 @@ Bütün əmrlər üçün klik et /help.
 HELP_STRINGS = """
 Salamlar! Mənim adım *{}*.
 Mənimlə birlikdə qruplarınızı idarə edə bilərsiniz.
-
 *Əsas* əmrlər:
  • /help: Kömək menyusu.
  • /help <modul adı>: müəyyən modul haqqında məlumat verir.
  • /settings:
    • PM-də : ayarları göstərir.
    • qrupda: qrup ayarlarını göstərir.
-
-
 {}
 Və aşağıdakılar:
 """.format(
@@ -211,7 +208,11 @@ def start(update: Update, context: CallbackContext):
                              text="🧾 Botla bağlı məlumat",
                              url="https://t.me/SenanOguz")
                      ],
-                     ]))
+                     [
+                         InlineKeyboardButton(
+                             text="🗄 Elnurla Əlaqə",
+                             url="https://t.me/e1nurmov")
+                     ]]))
     else:
         update.effective_message.reply_text(
             "Mən oyağam!\n<b>Bu müddətdən bəri yatmıram:</b> <code>{}</code>"
