@@ -71,7 +71,7 @@ Və aşağıdakılar:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nBütün əmrlər / və ya ! ilə işlədilir.\n")
 
-SAITAMA_IMG = "https://i.imgyukle.com/2021/01/22/HY7Pl8.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/a5046150489ff31376ff1.jpg"
 
 DONATE_STRING = """Bəxşişə ehtiyyac yoxdu təşəkkürlər."""
 
@@ -181,8 +181,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                SAITAMA_IMG,
+            update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
