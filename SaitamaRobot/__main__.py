@@ -190,7 +190,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Elnuru qruplarınıza əlavə edin",
+                            text="☑️ Botu qrupunuza əlavə edin",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
