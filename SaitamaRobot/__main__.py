@@ -51,13 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Salam {} necəsən? mənim adım {}! 
+Salam {} necəsən? mənim adım {Celishrobot}! 
 Mən Azərbaycanca olan qrup idarə botuyam.
 Bütün əmrlər üçün klik et /help.
 """
 
 HELP_STRINGS = """
-Salamlar! Mənim adım *{}*.
+Salamlar! Mənim adım *{Celishrobot}*.
 Mənimlə birlikdə qruplarınızı idarə edə bilərsiniz.
 *Əsas* əmrlər:
  • /help: Kömək menyusu.
@@ -197,20 +197,20 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🚑 Dəstək Qrupu",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/{celishrobot_support}"),
                          InlineKeyboardButton(
                              text="🔔 Yeniliklər kanalı",
-                             url="https://t.me/SoBotlar")
+                             url="https://t.me/serxandi")
                      ],
                      [
                          InlineKeyboardButton(
                              text="🧾 Botla bağlı məlumat",
-                             url="https://t.me/SenanOguz")
+                             url="https://t.me/Serxxandi")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Elnurla Əlaqə",
-                             url="https://t.me/e1nurmov")
+                             text="🗄 Serxanla Əlaqə",
+                             url="https://t.me/serxxandi")
                      ]]))
     else:
         update.effective_message.reply_text(
